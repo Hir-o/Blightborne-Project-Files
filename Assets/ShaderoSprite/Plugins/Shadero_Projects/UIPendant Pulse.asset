@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0c2324a9ab1224ebe3edad393e3544, type: 3}
+  m_Name: UIPendant Pulse
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114702801736252022}
+  - {fileID: 114467049966604338}
+  - {fileID: 114735965322883044}
+  - {fileID: 114639653412566900}
+  editorStates:
+  - {fileID: 114344831814589880}
+  livesInScene: 0
+--- !u!114 &114030637371038998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114467049966604338}
+  side: 2
+  sidePosition: 52.2
+  sideOffset: 0
+  connections:
+  - {fileID: 114885644610620716}
+  typeID: SuperFloat4
+  calculationBlockade: 0
+--- !u!114 &114266707588849684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114735965322883044}
+  side: 2
+  sidePosition: 102.2
+  sideOffset: 0
+  connections:
+  - {fileID: 114642492535681022}
+  typeID: SuperFloat4
+  calculationBlockade: 0
+--- !u!114 &114344831814589880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 11400000}
+  parentEditor: {fileID: 0}
+  drawing: 1
+  selectedNode: {fileID: 114639653412566900}
+  LivePreviewShaderPath: Assets/Shaders/UIPendant.shader
+  ShaderName: UIPendant
+  ShaderInMemory: {fileID: 4800000, guid: e02a9de17ea5e86478b3c446bb67cb79, type: 3}
+  panOffset: {x: 328.1992, y: 70.20053}
+  zoom: 2.2
+--- !u!114 &114436606141216816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114735965322883044}
+  side: 4
+  sidePosition: 102.2
+  sideOffset: 0
+  connection: {fileID: 114490625122218006}
+  typeID: SuperFloat4
+--- !u!114 &114467049966604338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ec3a51e031a9f42a8eeb9d470525f6, type: 3}
+  m_Name: Main Texture
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -834.5
+    y: -379.3
+    width: 148
+    height: 215
+  nodeKnobs:
+  - {fileID: 114631608734374966}
+  - {fileID: 114030637371038998}
+  Inputs:
+  - {fileID: 114631608734374966}
+  Outputs:
+  - {fileID: 114030637371038998}
+  Variable: _MainTex_
+  MemoCount: 1
+--- !u!114 &114490625122218006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114639653412566900}
+  side: 2
+  sidePosition: 102.2
+  sideOffset: 0
+  connections:
+  - {fileID: 114436606141216816}
+  typeID: SuperFloat4
+  calculationBlockade: 0
+--- !u!114 &114631608734374966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: UV
+  m_EditorClassIdentifier: 
+  body: {fileID: 114467049966604338}
+  side: 4
+  sidePosition: 52.2
+  sideOffset: 0
+  connection: {fileID: 0}
+  typeID: SuperFloat2
+--- !u!114 &114639653412566900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba22c408699fb34db3dac996e43a5ea, type: 3}
+  m_Name: Super Gray Scale
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -600.8998
+    y: -487.70004
+    width: 172
+    height: 330
+  nodeKnobs:
+  - {fileID: 114885644610620716}
+  - {fileID: 114490625122218006}
+  Inputs:
+  - {fileID: 114885644610620716}
+  Outputs:
+  - {fileID: 114490625122218006}
+  Variable: 0
+  result: 
+  HDR: 0
+  HDRvalue: 1
+  parametersOK: 1
+  MemoCount: 1
+--- !u!114 &114642492535681022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114702801736252022}
+  side: 4
+  sidePosition: 52
+  sideOffset: 0
+  connection: {fileID: 114266707588849684}
+  typeID: SuperFloat4
+--- !u!114 &114702801736252022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0a24bab1293f04d997dae2ec51c468, type: 3}
+  m_Name: Build Shader
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 90.99983
+    y: -239.20006
+    width: 300
+    height: 400
+  nodeKnobs:
+  - {fileID: 114642492535681022}
+  Inputs:
+  - {fileID: 114642492535681022}
+  Outputs: []
+  BuildErrorFlag: 0
+  BuildLightningSupport: 0
+--- !u!114 &114735965322883044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9be3a1f801b14d96cd8e674f801b8, type: 3}
+  m_Name: Premade Gradients
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -272.9991
+    y: -241.80049
+    width: 172
+    height: 530
+  nodeKnobs:
+  - {fileID: 114436606141216816}
+  - {fileID: 114266707588849684}
+  Inputs:
+  - {fileID: 114436606141216816}
+  Outputs:
+  - {fileID: 114266707588849684}
+  Variable: {r: 0.55, g: 0.55, b: 0.55, a: 1}
+  Variable2: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+  Variable3: {r: 0.29, g: 0.29, b: 0.29, a: 1}
+  Variable4: {r: 0.54, g: 0.59000003, b: 0.69000006, a: 1}
+  Variable5: 0
+  Variable6: 0.096
+  Variable7: 2
+  AddParameters: 1
+  CurrentPremade: 0
+  CurrentTexture: Textures/previews/nid_grd_bluewater.jpg
+  MemoCount: 1
+--- !u!114 &114885644610620716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: RGBA
+  m_EditorClassIdentifier: 
+  body: {fileID: 114639653412566900}
+  side: 4
+  sidePosition: 102.2
+  sideOffset: 0
+  connection: {fileID: 114030637371038998}
+  typeID: SuperFloat4

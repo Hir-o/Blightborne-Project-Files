@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1466325170767504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4445601589047058}
+  - component: {fileID: 212561455720818376}
+  - component: {fileID: 114950241111599226}
+  m_Layer: 0
+  m_Name: Blood Stain Goblin Green
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4445601589047058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466325170767504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.746588, y: 1.1199961, z: -0.10443959}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &212561455720818376
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466325170767504}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -671706885
+  m_SortingLayer: 2
+  m_SortingOrder: -20
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 0.6407503, g: 0.8867924, b: 0.51450694, a: 0.6431373}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &114950241111599226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466325170767504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ae15e4f1213174d8434f2a68cebfb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodStains:
+  - {fileID: 21300000, guid: 25bce25bab7315d4db8c3fa674586239, type: 3}
+  - {fileID: 21300000, guid: 9e18715e6f5567e468b6459a2a8ce425, type: 3}
+  - {fileID: 21300000, guid: 6aebf0a58e5537b4a9f80216713bac31, type: 3}
+  - {fileID: 21300000, guid: b09d454acc0f3434a949f9d3804dfda8, type: 3}
+  - {fileID: 21300000, guid: 42caa9fc13832eb41be47e498113c29f, type: 3}
+  - {fileID: 21300000, guid: 74660c079d570304b9395fb2ae026c6a, type: 3}
+  minBloodStainSize: 0.1
+  maxBloodStainSize: 0.15
+  yOffset: 0
+  fadingTimer: 0.05
+  fadingDelay: 30
+  maxRotX: 50
+  minRotX: 0
+  maxRotY: 50
+  minRotY: 0
+  maxRotZ: 180
+  minRotZ: -180
+  colors:
+  - {r: 0.6392157, g: 0.8862745, b: 0.5137255, a: 0.6666667}
+  - {r: 0.65497863, g: 0.9433962, b: 0.52954787, a: 0.6431373}
+  - {r: 0.45775387, g: 0.7830189, b: 0.44691172, a: 0.6666667}
+  - {r: 0.50949603, g: 0.8679245, b: 0.42986825, a: 0.7058824}
+  - {r: 0.41628358, g: 0.6981132, b: 0.35893556, a: 0.7058824}
+  - {r: 0.55457425, g: 0.9622642, b: 0.39489147, a: 0.6431373}
+  - {r: 0.5304824, g: 0.8584906, b: 0.5362369, a: 0.60784316}
+  minLayerOrder: -200
+  maxLayerOrder: -100
